@@ -304,6 +304,46 @@
         </inertial>
     </link>
 
+    <!-- Forward-facing camera for QR verification, mounted on the front edge of
+    the 2nd-story plate at roughly aisle-placard height (~0.3 m) -->
+    <xacro:property name="camera_mount_x" value="${level2_length/2 - 0.02}"/>
+    <xacro:property name="camera_size" value="0.03"/>
+    
+    <material name="camera_black">
+        <color rgba="0.05 0.05 0.05 1.0"/>
+    </material>
+    
+    <joint name="camera_joint" type="fixed">
+        <origin xyz="${camera_mount_x} 0 0.03" rpy="0 0 0"/>
+        <parent link="level2_link"/>
+        <child link="camera_link"/>
+    </joint>
+    
+    <link name="camera_link">
+        <visual>
+            <geometry><box size="${camera_size} ${camera_size} ${camera_size}"/></geometry>
+            <material name="camera_black"/>
+        </visual>
+        <collision>
+            <geometry><box size="${camera_size} ${camera_size} ${camera_size}"/></geometry>
+        </collision>
+        <inertial>
+            <mass value="0.05"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1e-5" ixy="0" ixz="0" iyy="1e-5" iyz="0" izz="1e-5"/>
+        </inertial>
+    </link>
+    
+    <!-- ROS optical-frame convention (z-forward, x-right, y-down) for the
+         published image; the gz sensor itself renders along the link's +x -->
+    <joint name="camera_optical_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+        <parent link="camera_link"/>
+        <child link="camera_optical_link"/>
+    </joint>
+    <link name="camera_optical_link"></link>
+    
+
     <!-- SO-101 pick arm, mounted on the 2nd-story plate -->
     <xacro:so101_arm prefix="arm_" parent="level2_link" add_transmissions="false">
         <origin xyz="${arm_mount_x} ${arm_mount_y} ${arm_mount_z}" rpy="0 0 ${arm_mount_yaw}"/>

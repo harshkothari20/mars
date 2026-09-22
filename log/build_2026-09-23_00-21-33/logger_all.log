@@ -1,0 +1,1017 @@
+[0.566s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'mars']
+[0.566s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['mars'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79e8f67a97c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79e8f67a93a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79e8f67a93a0>>, mixin_verb=('build',))
+[0.780s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.782s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/harsh/ros2_ws'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['ignore', 'ignore_ament_install']
+[0.931s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'ignore'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'ignore_ament_install'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['colcon_pkg']
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'colcon_pkg'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['colcon_meta']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'colcon_meta'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['ros']
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'ros'
+[0.933s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['cmake', 'python']
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'cmake'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'python'
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['python_setup_py']
+[0.934s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'python_setup_py'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['ignore', 'ignore_ament_install']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'ignore'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'ignore_ament_install'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['colcon_pkg']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'colcon_pkg'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['colcon_meta']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'colcon_meta'
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['ros']
+[0.936s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'ros'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['cmake', 'python']
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'cmake'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'python'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['python_setup_py']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'python_setup_py'
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extensions ['ignore', 'ignore_ament_install']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'ignore'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'ignore_ament_install'
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extensions ['colcon_pkg']
+[0.939s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'colcon_pkg'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extensions ['colcon_meta']
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'colcon_meta'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extensions ['ros']
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'ros'
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extensions ['cmake', 'python']
+[0.940s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'cmake'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'python'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extensions ['python_setup_py']
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules) by extension 'python_setup_py'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extensions ['ignore', 'ignore_ament_install']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'ignore'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'ignore_ament_install'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extensions ['colcon_pkg']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'colcon_pkg'
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extensions ['colcon_meta']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'colcon_meta'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extensions ['ros']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'ros'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extensions ['cmake', 'python']
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'cmake'
+[0.943s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'python'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extensions ['python_setup_py']
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js) by extension 'python_setup_py'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extensions ['ignore', 'ignore_ament_install']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'ignore'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'ignore_ament_install'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extensions ['colcon_pkg']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'colcon_pkg'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extensions ['colcon_meta']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'colcon_meta'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extensions ['ros']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'ros'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extensions ['cmake', 'python']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'cmake'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'python'
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extensions ['python_setup_py']
+[0.947s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep) by extension 'python_setup_py'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extensions ['ignore', 'ignore_ament_install']
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'ignore'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'ignore_ament_install'
+[0.948s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extensions ['colcon_pkg']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'colcon_pkg'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extensions ['colcon_meta']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'colcon_meta'
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extensions ['ros']
+[0.949s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'ros'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extensions ['cmake', 'python']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'cmake'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'python'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extensions ['python_setup_py']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@mongodb-js/saslprep/dist) by extension 'python_setup_py'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extensions ['ignore', 'ignore_ament_install']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'ignore'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'ignore_ament_install'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extensions ['colcon_pkg']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'colcon_pkg'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extensions ['colcon_meta']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'colcon_meta'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extensions ['ros']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'ros'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extensions ['cmake', 'python']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'cmake'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'python'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extensions ['python_setup_py']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types) by extension 'python_setup_py'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'ignore'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'ignore_ament_install'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extensions ['colcon_pkg']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'colcon_pkg'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extensions ['colcon_meta']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'colcon_meta'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extensions ['ros']
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'ros'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extensions ['cmake', 'python']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'cmake'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'python'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extensions ['python_setup_py']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/webidl-conversions) by extension 'python_setup_py'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extensions ['ignore', 'ignore_ament_install']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'ignore'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'ignore_ament_install'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extensions ['colcon_pkg']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'colcon_pkg'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extensions ['colcon_meta']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'colcon_meta'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extensions ['ros']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'ros'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extensions ['cmake', 'python']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'cmake'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'python'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extensions ['python_setup_py']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url) by extension 'python_setup_py'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'ignore'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'ignore_ament_install'
+[0.961s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extensions ['colcon_pkg']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'colcon_pkg'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extensions ['colcon_meta']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'colcon_meta'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extensions ['ros']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'ros'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extensions ['cmake', 'python']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'cmake'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'python'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extensions ['python_setup_py']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/@types/whatwg-url/lib) by extension 'python_setup_py'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extensions ['ignore', 'ignore_ament_install']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'ignore'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'ignore_ament_install'
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extensions ['colcon_pkg']
+[0.964s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'colcon_pkg'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extensions ['colcon_meta']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'colcon_meta'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extensions ['ros']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'ros'
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extensions ['cmake', 'python']
+[0.965s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'cmake'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'python'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extensions ['python_setup_py']
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson) by extension 'python_setup_py'
+[0.966s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extensions ['ignore', 'ignore_ament_install']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'ignore'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'ignore_ament_install'
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extensions ['colcon_pkg']
+[0.967s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'colcon_pkg'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extensions ['colcon_meta']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'colcon_meta'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extensions ['ros']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'ros'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extensions ['cmake', 'python']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'cmake'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'python'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extensions ['python_setup_py']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/etc) by extension 'python_setup_py'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'ignore'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'ignore_ament_install'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extensions ['colcon_pkg']
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'colcon_pkg'
+[0.970s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extensions ['colcon_meta']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'colcon_meta'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extensions ['ros']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'ros'
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extensions ['cmake', 'python']
+[0.971s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'cmake'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'python'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extensions ['python_setup_py']
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/lib) by extension 'python_setup_py'
+[0.972s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extensions ['ignore', 'ignore_ament_install']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'ignore'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'ignore_ament_install'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extensions ['colcon_pkg']
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'colcon_pkg'
+[0.973s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extensions ['colcon_meta']
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'colcon_meta'
+[0.974s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extensions ['ros']
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'ros'
+[0.976s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extensions ['cmake', 'python']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'cmake'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'python'
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extensions ['python_setup_py']
+[0.977s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src) by extension 'python_setup_py'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extensions ['ignore', 'ignore_ament_install']
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'ignore'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'ignore_ament_install'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extensions ['colcon_pkg']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'colcon_pkg'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extensions ['colcon_meta']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'colcon_meta'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extensions ['ros']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'ros'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extensions ['cmake', 'python']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'cmake'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'python'
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extensions ['python_setup_py']
+[0.980s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser) by extension 'python_setup_py'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extensions ['ignore', 'ignore_ament_install']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'ignore'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'ignore_ament_install'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extensions ['colcon_pkg']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'colcon_pkg'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extensions ['colcon_meta']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'colcon_meta'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extensions ['ros']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'ros'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extensions ['cmake', 'python']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'cmake'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'python'
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extensions ['python_setup_py']
+[0.984s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/parser/on_demand) by extension 'python_setup_py'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'ignore'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'ignore_ament_install'
+[0.985s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extensions ['colcon_pkg']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'colcon_pkg'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extensions ['colcon_meta']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'colcon_meta'
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extensions ['ros']
+[0.986s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'ros'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extensions ['cmake', 'python']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'cmake'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'python'
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extensions ['python_setup_py']
+[0.987s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/bson/src/utils) by extension 'python_setup_py'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extensions ['ignore', 'ignore_ament_install']
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'ignore'
+[0.988s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'ignore_ament_install'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extensions ['colcon_pkg']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'colcon_pkg'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extensions ['colcon_meta']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'colcon_meta'
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extensions ['ros']
+[0.989s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'ros'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extensions ['cmake', 'python']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'cmake'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'python'
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extensions ['python_setup_py']
+[0.990s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/memory-pager) by extension 'python_setup_py'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extensions ['ignore', 'ignore_ament_install']
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'ignore'
+[0.991s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'ignore_ament_install'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extensions ['colcon_pkg']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'colcon_pkg'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extensions ['colcon_meta']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'colcon_meta'
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extensions ['ros']
+[0.992s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'ros'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extensions ['cmake', 'python']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'cmake'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'python'
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extensions ['python_setup_py']
+[0.993s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb) by extension 'python_setup_py'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extensions ['ignore', 'ignore_ament_install']
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'ignore'
+[0.994s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'ignore_ament_install'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extensions ['colcon_pkg']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'colcon_pkg'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extensions ['colcon_meta']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'colcon_meta'
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extensions ['ros']
+[0.995s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'ros'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extensions ['cmake', 'python']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'cmake'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'python'
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extensions ['python_setup_py']
+[0.996s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/etc) by extension 'python_setup_py'
+[0.997s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'ignore'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'ignore_ament_install'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extensions ['colcon_pkg']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'colcon_pkg'
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extensions ['colcon_meta']
+[0.998s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'colcon_meta'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extensions ['ros']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'ros'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extensions ['cmake', 'python']
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'cmake'
+[0.999s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'python'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extensions ['python_setup_py']
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib) by extension 'python_setup_py'
+[1.000s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extensions ['ignore', 'ignore_ament_install']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'ignore'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'ignore_ament_install'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extensions ['colcon_pkg']
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'colcon_pkg'
+[1.001s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extensions ['colcon_meta']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'colcon_meta'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extensions ['ros']
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'ros'
+[1.002s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extensions ['cmake', 'python']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'cmake'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'python'
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extensions ['python_setup_py']
+[1.003s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/bulk) by extension 'python_setup_py'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extensions ['ignore', 'ignore_ament_install']
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'ignore'
+[1.004s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'ignore_ament_install'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extensions ['colcon_pkg']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'colcon_pkg'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extensions ['colcon_meta']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'colcon_meta'
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extensions ['ros']
+[1.005s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'ros'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extensions ['cmake', 'python']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'cmake'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'python'
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extensions ['python_setup_py']
+[1.006s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption) by extension 'python_setup_py'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extensions ['ignore', 'ignore_ament_install']
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'ignore'
+[1.007s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'ignore_ament_install'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extensions ['colcon_pkg']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'colcon_pkg'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extensions ['colcon_meta']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'colcon_meta'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extensions ['ros']
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'ros'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extensions ['cmake', 'python']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'cmake'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'python'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extensions ['python_setup_py']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/client-side-encryption/providers) by extension 'python_setup_py'
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extensions ['ignore', 'ignore_ament_install']
+[1.010s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'ignore'
+[1.011s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'ignore_ament_install'
+[1.011s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extensions ['colcon_pkg']
+[1.011s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'colcon_pkg'
+[1.011s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extensions ['colcon_meta']
+[1.011s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'colcon_meta'
+[1.012s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extensions ['ros']
+[1.012s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'ros'
+[1.012s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extensions ['cmake', 'python']
+[1.012s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'cmake'
+[1.012s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'python'
+[1.012s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extensions ['python_setup_py']
+[1.013s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap) by extension 'python_setup_py'
+[1.013s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extensions ['ignore', 'ignore_ament_install']
+[1.014s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'ignore'
+[1.014s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'ignore_ament_install'
+[1.014s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extensions ['colcon_pkg']
+[1.014s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'colcon_pkg'
+[1.014s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extensions ['colcon_meta']
+[1.015s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'colcon_meta'
+[1.015s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extensions ['ros']
+[1.015s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'ros'
+[1.015s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extensions ['cmake', 'python']
+[1.015s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'cmake'
+[1.016s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'python'
+[1.016s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extensions ['python_setup_py']
+[1.016s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth) by extension 'python_setup_py'
+[1.017s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extensions ['ignore', 'ignore_ament_install']
+[1.017s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'ignore'
+[1.017s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'ignore_ament_install'
+[1.018s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extensions ['colcon_pkg']
+[1.018s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'colcon_pkg'
+[1.018s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extensions ['colcon_meta']
+[1.018s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'colcon_meta'
+[1.018s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extensions ['ros']
+[1.018s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'ros'
+[1.019s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extensions ['cmake', 'python']
+[1.019s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'cmake'
+[1.019s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'python'
+[1.019s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extensions ['python_setup_py']
+[1.019s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/auth/mongodb_oidc) by extension 'python_setup_py'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extensions ['ignore', 'ignore_ament_install']
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'ignore'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'ignore_ament_install'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extensions ['colcon_pkg']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'colcon_pkg'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extensions ['colcon_meta']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'colcon_meta'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extensions ['ros']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'ros'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extensions ['cmake', 'python']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'cmake'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'python'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extensions ['python_setup_py']
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/handshake) by extension 'python_setup_py'
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extensions ['ignore', 'ignore_ament_install']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'ignore'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'ignore_ament_install'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extensions ['colcon_pkg']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'colcon_pkg'
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extensions ['colcon_meta']
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'colcon_meta'
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extensions ['ros']
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'ros'
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extensions ['cmake', 'python']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'cmake'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'python'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extensions ['python_setup_py']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol) by extension 'python_setup_py'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extensions ['ignore', 'ignore_ament_install']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'ignore'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'ignore_ament_install'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extensions ['colcon_pkg']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'colcon_pkg'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extensions ['colcon_meta']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'colcon_meta'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extensions ['ros']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'ros'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extensions ['cmake', 'python']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'cmake'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'python'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extensions ['python_setup_py']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cmap/wire_protocol/on_demand) by extension 'python_setup_py'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extensions ['ignore', 'ignore_ament_install']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'ignore'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'ignore_ament_install'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extensions ['colcon_pkg']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'colcon_pkg'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extensions ['colcon_meta']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'colcon_meta'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extensions ['ros']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'ros'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extensions ['cmake', 'python']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'cmake'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'python'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extensions ['python_setup_py']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/cursor) by extension 'python_setup_py'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extensions ['ignore', 'ignore_ament_install']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'ignore_ament_install'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extensions ['colcon_pkg']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'colcon_pkg'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extensions ['colcon_meta']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'colcon_meta'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extensions ['ros']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'ros'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extensions ['cmake', 'python']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'cmake'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extensions ['python_setup_py']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/gridfs) by extension 'python_setup_py'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extensions ['ignore', 'ignore_ament_install']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'ignore'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'ignore_ament_install'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extensions ['colcon_pkg']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'colcon_pkg'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extensions ['colcon_meta']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'colcon_meta'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extensions ['ros']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'ros'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extensions ['cmake', 'python']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'cmake'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'python'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extensions ['python_setup_py']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations) by extension 'python_setup_py'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extensions ['ignore', 'ignore_ament_install']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'ignore'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'ignore_ament_install'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extensions ['colcon_pkg']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'colcon_pkg'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extensions ['colcon_meta']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'colcon_meta'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extensions ['ros']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'ros'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extensions ['cmake', 'python']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'cmake'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'python'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extensions ['python_setup_py']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/client_bulk_write) by extension 'python_setup_py'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extensions ['ignore', 'ignore_ament_install']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'ignore'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'ignore_ament_install'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extensions ['colcon_pkg']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'colcon_pkg'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extensions ['colcon_meta']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'colcon_meta'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extensions ['ros']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'ros'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extensions ['cmake', 'python']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'cmake'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'python'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extensions ['python_setup_py']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/operations/search_indexes) by extension 'python_setup_py'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extensions ['ignore', 'ignore_ament_install']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'ignore'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'ignore_ament_install'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extensions ['colcon_pkg']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'colcon_pkg'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extensions ['colcon_meta']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'colcon_meta'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extensions ['ros']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'ros'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extensions ['cmake', 'python']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'cmake'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'python'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extensions ['python_setup_py']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/lib/sdam) by extension 'python_setup_py'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extensions ['ignore', 'ignore_ament_install']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'ignore'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'ignore_ament_install'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extensions ['colcon_pkg']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'colcon_pkg'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extensions ['colcon_meta']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'colcon_meta'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extensions ['ros']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'ros'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extensions ['cmake', 'python']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'cmake'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'python'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extensions ['python_setup_py']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src) by extension 'python_setup_py'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extensions ['ignore', 'ignore_ament_install']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'ignore'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'ignore_ament_install'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extensions ['colcon_pkg']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'colcon_pkg'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extensions ['colcon_meta']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'colcon_meta'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extensions ['ros']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'ros'
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extensions ['cmake', 'python']
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'cmake'
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'python'
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extensions ['python_setup_py']
+[1.055s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/bulk) by extension 'python_setup_py'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extensions ['ignore', 'ignore_ament_install']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'ignore'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'ignore_ament_install'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extensions ['colcon_pkg']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'colcon_pkg'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extensions ['colcon_meta']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'colcon_meta'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extensions ['ros']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'ros'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extensions ['cmake', 'python']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'cmake'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'python'
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extensions ['python_setup_py']
+[1.058s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption) by extension 'python_setup_py'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extensions ['ignore', 'ignore_ament_install']
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'ignore'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'ignore_ament_install'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extensions ['colcon_pkg']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'colcon_pkg'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extensions ['colcon_meta']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'colcon_meta'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extensions ['ros']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'ros'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extensions ['cmake', 'python']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'cmake'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'python'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extensions ['python_setup_py']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/client-side-encryption/providers) by extension 'python_setup_py'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extensions ['ignore', 'ignore_ament_install']
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'ignore'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'ignore_ament_install'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extensions ['colcon_pkg']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'colcon_pkg'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extensions ['colcon_meta']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'colcon_meta'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extensions ['ros']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'ros'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extensions ['cmake', 'python']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'cmake'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'python'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extensions ['python_setup_py']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap) by extension 'python_setup_py'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extensions ['ignore', 'ignore_ament_install']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'ignore'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'ignore_ament_install'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extensions ['colcon_pkg']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'colcon_pkg'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extensions ['colcon_meta']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'colcon_meta'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extensions ['ros']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'ros'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extensions ['cmake', 'python']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'cmake'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'python'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extensions ['python_setup_py']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth) by extension 'python_setup_py'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'ignore'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'ignore_ament_install'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'colcon_meta'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extensions ['ros']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'ros'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extensions ['cmake', 'python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'cmake'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'python'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extensions ['python_setup_py']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/auth/mongodb_oidc) by extension 'python_setup_py'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'ignore'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'ignore_ament_install'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extensions ['colcon_pkg']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'colcon_pkg'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extensions ['colcon_meta']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'colcon_meta'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extensions ['ros']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'ros'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extensions ['cmake', 'python']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'cmake'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'python'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extensions ['python_setup_py']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/handshake) by extension 'python_setup_py'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extensions ['ignore', 'ignore_ament_install']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'ignore'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'ignore_ament_install'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extensions ['colcon_pkg']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'colcon_pkg'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extensions ['colcon_meta']
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'colcon_meta'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extensions ['ros']
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'ros'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extensions ['cmake', 'python']
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'cmake'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'python'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extensions ['python_setup_py']
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol) by extension 'python_setup_py'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extensions ['ignore', 'ignore_ament_install']
+[1.078s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'ignore'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'ignore_ament_install'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extensions ['colcon_pkg']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'colcon_pkg'
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extensions ['colcon_meta']
+[1.079s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'colcon_meta'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extensions ['ros']
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'ros'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extensions ['cmake', 'python']
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'cmake'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'python'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extensions ['python_setup_py']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cmap/wire_protocol/on_demand) by extension 'python_setup_py'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extensions ['ignore', 'ignore_ament_install']
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'ignore'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'ignore_ament_install'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extensions ['colcon_pkg']
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'colcon_pkg'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extensions ['colcon_meta']
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'colcon_meta'
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extensions ['ros']
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'ros'
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extensions ['cmake', 'python']
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'cmake'
+[1.083s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'python'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extensions ['python_setup_py']
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/cursor) by extension 'python_setup_py'
+[1.084s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extensions ['ignore', 'ignore_ament_install']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'ignore'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'ignore_ament_install'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extensions ['colcon_pkg']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'colcon_pkg'
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extensions ['colcon_meta']
+[1.085s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'colcon_meta'
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extensions ['ros']
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'ros'
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extensions ['cmake', 'python']
+[1.086s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'cmake'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'python'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extensions ['python_setup_py']
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/gridfs) by extension 'python_setup_py'
+[1.087s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extensions ['ignore', 'ignore_ament_install']
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'ignore'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'ignore_ament_install'
+[1.088s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extensions ['colcon_pkg']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'colcon_pkg'
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extensions ['colcon_meta']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'colcon_meta'
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extensions ['ros']
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'ros'
+[1.089s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extensions ['cmake', 'python']
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'cmake'
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'python'
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extensions ['python_setup_py']
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations) by extension 'python_setup_py'
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extensions ['ignore', 'ignore_ament_install']
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'ignore'
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'ignore_ament_install'
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extensions ['colcon_pkg']
+[1.091s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'colcon_pkg'
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extensions ['colcon_meta']
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'colcon_meta'
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extensions ['ros']
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'ros'
+[1.092s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extensions ['cmake', 'python']
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'cmake'
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'python'
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extensions ['python_setup_py']
+[1.093s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/client_bulk_write) by extension 'python_setup_py'
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extensions ['ignore', 'ignore_ament_install']
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'ignore'
+[1.094s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'ignore_ament_install'
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extensions ['colcon_pkg']
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'colcon_pkg'
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extensions ['colcon_meta']
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'colcon_meta'
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extensions ['ros']
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'ros'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extensions ['cmake', 'python']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'cmake'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'python'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extensions ['python_setup_py']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/operations/search_indexes) by extension 'python_setup_py'
+[1.097s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extensions ['ignore', 'ignore_ament_install']
+[1.097s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'ignore'
+[1.097s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'ignore_ament_install'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extensions ['colcon_pkg']
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'colcon_pkg'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extensions ['colcon_meta']
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'colcon_meta'
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extensions ['ros']
+[1.098s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'ros'
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extensions ['cmake', 'python']
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'cmake'
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'python'
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extensions ['python_setup_py']
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb/src/sdam) by extension 'python_setup_py'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extensions ['ignore', 'ignore_ament_install']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'ignore'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'ignore_ament_install'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extensions ['colcon_pkg']
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'colcon_pkg'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extensions ['colcon_meta']
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'colcon_meta'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extensions ['ros']
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'ros'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extensions ['cmake', 'python']
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'cmake'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'python'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extensions ['python_setup_py']
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url) by extension 'python_setup_py'
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extensions ['ignore', 'ignore_ament_install']
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'ignore'
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'ignore_ament_install'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extensions ['colcon_pkg']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'colcon_pkg'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extensions ['colcon_meta']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'colcon_meta'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extensions ['ros']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'ros'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extensions ['cmake', 'python']
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'cmake'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'python'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extensions ['python_setup_py']
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/mongodb-connection-string-url/lib) by extension 'python_setup_py'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extensions ['ignore', 'ignore_ament_install']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'ignore'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'ignore_ament_install'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extensions ['colcon_pkg']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'colcon_pkg'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extensions ['colcon_meta']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'colcon_meta'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extensions ['ros']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'ros'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extensions ['cmake', 'python']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'cmake'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'python'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extensions ['python_setup_py']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/punycode) by extension 'python_setup_py'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extensions ['ignore', 'ignore_ament_install']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'ignore'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'ignore_ament_install'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extensions ['colcon_pkg']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'colcon_pkg'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extensions ['colcon_meta']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'colcon_meta'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extensions ['ros']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'ros'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extensions ['cmake', 'python']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'cmake'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'python'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extensions ['python_setup_py']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/sparse-bitfield) by extension 'python_setup_py'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extensions ['ignore', 'ignore_ament_install']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'ignore'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'ignore_ament_install'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extensions ['colcon_pkg']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'colcon_pkg'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extensions ['colcon_meta']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'colcon_meta'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extensions ['ros']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'ros'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extensions ['cmake', 'python']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'cmake'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'python'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extensions ['python_setup_py']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46) by extension 'python_setup_py'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extensions ['ignore', 'ignore_ament_install']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'ignore'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'ignore_ament_install'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extensions ['colcon_pkg']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'colcon_pkg'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extensions ['colcon_meta']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'colcon_meta'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extensions ['ros']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'ros'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extensions ['cmake', 'python']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'cmake'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'python'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extensions ['python_setup_py']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/tr46/lib) by extension 'python_setup_py'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extensions ['ignore', 'ignore_ament_install']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'ignore'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'ignore_ament_install'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extensions ['colcon_pkg']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'colcon_pkg'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extensions ['colcon_meta']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'colcon_meta'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extensions ['ros']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'ros'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extensions ['cmake', 'python']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'cmake'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'python'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extensions ['python_setup_py']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions) by extension 'python_setup_py'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extensions ['ignore', 'ignore_ament_install']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'ignore'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'ignore_ament_install'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extensions ['colcon_pkg']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'colcon_pkg'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extensions ['colcon_meta']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'colcon_meta'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extensions ['ros']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'ros'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extensions ['cmake', 'python']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'cmake'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'python'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extensions ['python_setup_py']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/webidl-conversions/lib) by extension 'python_setup_py'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extensions ['ignore', 'ignore_ament_install']
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'ignore'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'ignore_ament_install'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extensions ['colcon_pkg']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'colcon_pkg'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extensions ['colcon_meta']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'colcon_meta'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extensions ['ros']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'ros'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extensions ['cmake', 'python']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'cmake'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'python'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extensions ['python_setup_py']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url) by extension 'python_setup_py'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extensions ['ignore', 'ignore_ament_install']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'ignore'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'ignore_ament_install'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extensions ['colcon_pkg']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'colcon_pkg'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extensions ['colcon_meta']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'colcon_meta'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extensions ['ros']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'ros'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extensions ['cmake', 'python']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'cmake'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'python'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extensions ['python_setup_py']
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/node_modules/whatwg-url/lib) by extension 'python_setup_py'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['ignore', 'ignore_ament_install']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'ignore'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'ignore_ament_install'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['colcon_pkg']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'colcon_pkg'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['colcon_meta']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'colcon_meta'
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['ros']
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'ros'
+[1.145s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mars' with type 'ros.ament_cmake' and name 'mars'
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['ignore', 'ignore_ament_install']
+[1.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'ignore'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'ignore_ament_install'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['colcon_pkg']
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'colcon_pkg'
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['colcon_meta']
+[1.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'colcon_meta'
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['ros']
+[1.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'ros'
+[1.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mars_orders' with type 'ros.ament_python' and name 'mars_orders'
+[1.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.262s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mars_orders' in 'src/mars_orders'
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.287s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 390 installed packages in /opt/ros/jazzy
+[1.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_args' from command line to 'None'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_target' from command line to 'None'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_clean_cache' from command line to 'False'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_clean_first' from command line to 'False'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_force_configure' from command line to 'False'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'ament_cmake_args' from command line to 'None'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'catkin_cmake_args' from command line to 'None'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.568s] DEBUG:colcon.colcon_core.verb:Building package 'mars' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/harsh/ros2_ws/build/mars', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/harsh/ros2_ws/install/mars', 'merge_install': False, 'path': '/home/harsh/ros2_ws/src/mars', 'symlink_install': False, 'test_result_base': None}
+[1.569s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.573s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.574s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/harsh/ros2_ws/src/mars' with build type 'ament_cmake'
+[1.574s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/harsh/ros2_ws/src/mars'
+[1.586s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.587s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[1.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[1.959s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+[2.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mars)
+[2.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+[2.138s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake module files
+[2.140s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake config files
+[2.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('mars', 'cmake_prefix_path')
+[2.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.ps1'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.dsv'
+[2.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.sh'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/pkgconfig/mars.pc'
+[2.155s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/python3.12/site-packages'
+[2.157s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[2.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.ps1'
+[2.162s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/harsh/ros2_ws/install/mars/share/mars/package.dsv'
+[2.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.sh'
+[2.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.bash'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.zsh'
+[2.175s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/harsh/ros2_ws/install/mars/share/colcon-core/packages/mars)
+[2.178s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mars)
+[2.179s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake module files
+[2.182s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake config files
+[2.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('mars', 'cmake_prefix_path')
+[2.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.ps1'
+[2.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.dsv'
+[2.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.sh'
+[2.193s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[2.194s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/pkgconfig/mars.pc'
+[2.195s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/python3.12/site-packages'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[2.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.ps1'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/harsh/ros2_ws/install/mars/share/mars/package.dsv'
+[2.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.sh'
+[2.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.bash'
+[2.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.zsh'
+[2.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/harsh/ros2_ws/install/mars/share/colcon-core/packages/mars)
+[2.212s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.214s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.216s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.216s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.245s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.245s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.246s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.315s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.316s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.ps1'
+[2.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/harsh/ros2_ws/install/_local_setup_util_ps1.py'
+[2.326s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.ps1'
+[2.331s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.sh'
+[2.334s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/harsh/ros2_ws/install/_local_setup_util_sh.py'
+[2.337s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.sh'
+[2.341s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.bash'
+[2.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.bash'
+[2.348s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.zsh'
+[2.351s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.zsh'

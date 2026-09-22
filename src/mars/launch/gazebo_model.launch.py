@@ -1,14 +1,22 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 import xacro
 
 def generate_launch_description():
     robotXacroName = 'differential_drive_robot'
     namePackage = 'mars'
+    
+    declareSpawnX = DeclareLaunchArgument('spawn_x', default_value='3.0')
+    declareSpawnY = DeclareLaunchArgument('spawn_y', default_value='-3.0')
+    declareSpawnYaw = DeclareLaunchArgument('spawn_yaw', default_value='3.14159')
+    spawnX = LaunchConfiguration('spawn_x')
+    spawnY = LaunchConfiguration('spawn_y')
+    spawnYaw = LaunchConfiguration('spawn_yaw')
 
     # Gazebo (gz-sim) rewrites package://mars/... URIs from the URDF into
     # model://mars/... and resolves them by searching GZ_SIM_RESOURCE_PATH.
@@ -41,7 +49,10 @@ def generate_launch_description():
     spawnModelNodeGazebo = Node(
         package='ros_gz_sim',
         executable='create',
-        arguments=['-name', robotXacroName, '-topic', 'robot_description', '-z', '0.1'],
+        arguments=[
+            '-name', robotXacroName, '-topic', 'robot_description',
+            '-x', spawnX, '-y', spawnY, '-z', '0.1', '-Y', spawnYaw,
+        ],
         output='screen',
     )
 
@@ -67,6 +78,9 @@ def generate_launch_description():
     )
 
     launchDescriptionObject = LaunchDescription()
+    launchDescriptionObject.add_action(declareSpawnX)
+    launchDescriptionObject.add_action(declareSpawnY)
+    launchDescriptionObject.add_action(declareSpawnYaw)
     launchDescriptionObject.add_action(setGzResourcePath)
     launchDescriptionObject.add_action(gazeboLaunch)
     launchDescriptionObject.add_action(spawnModelNodeGazebo)

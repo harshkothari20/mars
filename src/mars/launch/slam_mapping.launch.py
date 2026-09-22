@@ -24,6 +24,17 @@ def generate_launch_description():
             os.path.join(get_package_share_directory(namePackage), 'launch', 'gazebo_model.launch.py')
         )
     )
+    
+    gazeboModelLaunch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory(namePackage), 'launch' 'gazebo_model.launch.py')
+        ),
+        launch_arguments={
+            'spawn_x': '0.0',
+            'spawn_y': '0.0',
+            'spawn_yaw': '0.0',
+        }.items(),
+    )
 
     slamParamsFile = os.path.join(
         get_package_share_directory(namePackage), 'config', 'mapper_params_online_async.yaml'
