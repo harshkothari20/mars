@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: darkgreen;
+}
+

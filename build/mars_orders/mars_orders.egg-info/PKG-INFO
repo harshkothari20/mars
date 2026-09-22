@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mars-orders
+Version: 0.1.0
+Summary: Connects website orders to Nav2, QR confirmation and the arm
+Maintainer: Harsh
+Maintainer-email: todo@example.com
+License: MIT

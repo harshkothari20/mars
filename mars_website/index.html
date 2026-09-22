@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Shopping Cart</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1> Fresh Fruits Store </h1>
+        <h3> Cart: <span id="cart-count">0</span></h3>
+        
+        <div class="products">
+    <div class="product">
+        <h2>Apple</h2>
+        <p>₹120</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Banana</h2>
+        <p>₹60</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Grapes</h2>
+        <p>₹100</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+<div class="cart">
+    <h2> Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <h3>Total Items: <span id="total-items">0</span></h3>
+    <h3>Total Price: ₹<span id="total-price">0</span></h3>
+
+    <button id="place-order">Place Order</button>
+</div>
+    <script src="script.js"> </script>
+
+    </body>
+</html>

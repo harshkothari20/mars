@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Materials used by the SO-101 STL meshes -->
+  <material name="3d_printed">
+    <color rgba="1.0 0.82 0.12 1.0"/>
+  </material>
+  <material name="sts3215">
+    <color rgba="0.1 0.1 0.1 1.0"/>
+  </material>
+
+  <!-- Generic inertial block: xyz/rpy is the CoM pose, ixx..izz the inertia tensor -->
+  <xacro:macro name="inertial_block" params="xyz rpy mass ixx ixy ixz iyy iyz izz">
+    <inertial>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <mass value="${mass}"/>
+      <inertia ixx="${ixx}" ixy="${ixy}" ixz="${ixz}" iyy="${iyy}" iyz="${iyz}" izz="${izz}"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- One mesh part used identically for both visual and collision -->
+  <xacro:macro name="mesh_vc" params="filename xyz rpy material">
+    <visual>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <geometry>
+        <mesh filename="${filename}"/>
+      </geometry>
+      <material name="${material}"/>
+    </visual>
+    <collision>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <geometry>
+        <mesh filename="${filename}"/>
+      </geometry>
+    </collision>
+  </xacro:macro>
+
+  <!-- ros2_control-style simple transmission for one actuated joint -->
+  <xacro:macro name="simple_transmission" params="name joint actuator">
+    <transmission name="${name}">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${joint}">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${actuator}">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing mars_orders.egg-info/PKG-INFO
+writing dependency_links to mars_orders.egg-info/dependency_links.txt
+writing entry points to mars_orders.egg-info/entry_points.txt
+writing requirements to mars_orders.egg-info/requires.txt
+writing top-level names to mars_orders.egg-info/top_level.txt
+reading manifest file 'mars_orders.egg-info/SOURCES.txt'
+writing manifest file 'mars_orders.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars-orders.egg-link (link to .)
+Installing mock_arm script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+Installing mock_nav script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+Installing order_manager script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+
+Installed /home/harsh/ros2_ws/build/mars_orders
+running symlink_data
+symbolically linking /home/harsh/ros2_ws/build/mars_orders/resource/mars_orders -> /home/harsh/ros2_ws/install/mars_orders/share/ament_index/resource_index/packages
+symbolically linking /home/harsh/ros2_ws/build/mars_orders/package.xml -> /home/harsh/ros2_ws/install/mars_orders/share/mars_orders
+symbolically linking /home/harsh/ros2_ws/build/mars_orders/launch/orders.launch.py -> /home/harsh/ros2_ws/install/mars_orders/share/mars_orders/launch
+symbolically linking /home/harsh/ros2_ws/build/mars_orders/config/locations.yaml -> /home/harsh/ros2_ws/install/mars_orders/share/mars_orders/config

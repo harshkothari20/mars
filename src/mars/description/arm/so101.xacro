@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find mars)/description/arm/macros.xacro" />
+  <xacro:include filename="$(find mars)/description/arm/so101_arm.xacro" />
+  <xacro:include filename="$(find mars)/description/arm/so101_end_effector.xacro" />
+
+  <!--
+    Mounts a full SO-101 arm (4 arm joints + wrist roll + gripper jaw) onto `parent`.
+      prefix            : namespaces every link/joint, e.g. "arm_" -> "arm_base_link"
+      parent             : link on the host robot the arm bolts to (e.g. "base_link")
+      *origin            : xacro origin block - where on `parent` the arm mounts
+      add_transmissions  : true to emit <transmission> tags for ros2_control (leave
+                            false until the arm subsystem's ros2_control setup exists)
+  -->
+  <xacro:macro name="so101_arm" params="prefix parent add_transmissions:='false' *origin">
+    <xacro:so101_arm_common prefix="${prefix}" add_transmissions="${add_transmissions}"/>
+    <xacro:so101_gripper_frame prefix="${prefix}"/>
+    <xacro:so101_wrist_roll_joint prefix="${prefix}" add_transmission="${add_transmissions}"/>
+    <xacro:so101_gripper_link prefix="${prefix}" add_transmission="${add_transmissions}"/>
+
+    <joint name="${prefix}mount_joint" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${prefix}base_link"/>
+    </joint>
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,1 @@
+/home/harsh/ros2_ws/build/mars/ament_cmake_environment_hooks/local_setup.bash

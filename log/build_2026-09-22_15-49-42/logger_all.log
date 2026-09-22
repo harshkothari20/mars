@@ -1,0 +1,219 @@
+[0.062s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.062s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7efbd7ea10a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7efbd7ea0cb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7efbd7ea0cb0>>, mixin_verb=('build',))
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.086s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/harsh/ros2_ws'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'ignore_ament_install'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['colcon_pkg']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'ros'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['cmake', 'python']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'cmake'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'python'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extensions ['python_setup_py']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website) by extension 'python_setup_py'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'ignore_ament_install'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['colcon_pkg']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'ros'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['cmake', 'python']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'cmake'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'python'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extensions ['python_setup_py']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(mars_website/db) by extension 'python_setup_py'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'ignore'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'ignore_ament_install'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['colcon_pkg']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'colcon_pkg'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['colcon_meta']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'colcon_meta'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extensions ['ros']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars) by extension 'ros'
+[0.104s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mars' with type 'ros.ament_cmake' and name 'mars'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['ignore', 'ignore_ament_install']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'ignore'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'ignore_ament_install'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['colcon_pkg']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'colcon_pkg'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['colcon_meta']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'colcon_meta'
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extensions ['ros']
+[0.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/mars_orders) by extension 'ros'
+[0.105s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mars_orders' with type 'ros.ament_python' and name 'mars_orders'
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.117s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 390 installed packages in /opt/ros/jazzy
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_args' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_target' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_clean_cache' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_clean_first' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'cmake_force_configure' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'ament_cmake_args' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'catkin_cmake_args' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.147s] DEBUG:colcon.colcon_core.verb:Building package 'mars' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/harsh/ros2_ws/build/mars', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/harsh/ros2_ws/install/mars', 'merge_install': False, 'path': '/home/harsh/ros2_ws/src/mars', 'symlink_install': False, 'test_result_base': None}
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'cmake_args' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'cmake_target' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'cmake_clean_cache' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'cmake_clean_first' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'cmake_force_configure' from command line to 'False'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'ament_cmake_args' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'catkin_cmake_args' from command line to 'None'
+[0.147s] Level 5:colcon.colcon_core.verb:set package 'mars_orders' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.147s] DEBUG:colcon.colcon_core.verb:Building package 'mars_orders' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/harsh/ros2_ws/build/mars_orders', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/harsh/ros2_ws/install/mars_orders', 'merge_install': False, 'path': '/home/harsh/ros2_ws/src/mars_orders', 'symlink_install': False, 'test_result_base': None}
+[0.147s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.148s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/harsh/ros2_ws/src/mars' with build type 'ament_cmake'
+[0.148s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/harsh/ros2_ws/src/mars'
+[0.150s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.150s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.150s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.154s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/harsh/ros2_ws/src/mars_orders' with build type 'ament_python'
+[0.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('mars_orders', 'ament_prefix_path')
+[0.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/hook/ament_prefix_path.ps1'
+[0.155s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/hook/ament_prefix_path.dsv'
+[0.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/hook/ament_prefix_path.sh'
+[0.155s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.155s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/harsh/ros2_ws/src/mars -DCMAKE_INSTALL_PREFIX=/home/harsh/ros2_ws/install/mars
+[0.290s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/harsh/ros2_ws/src/mars_orders'
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.617s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: editable_wheel, build_ext, upload, bdist, bdist_rpm, install_scripts, saveopts, build, bdist_dumb, extract_messages, dist_info, egg_info, install_headers, alias, bdist_egg, install_data, symlink_data, build_py, upload_docs, rotate, setopt, update_catalog, easy_install, compile_catalog, build_scripts, develop, sdist, check, install_egg_info, install_lib, build_clib, clean, register, install, init_catalog, test
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/harsh/ros2_ws/src/mars_orders': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/harsh/ros2_ws/build/mars_orders/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mars_orders build --build-base /home/harsh/ros2_ws/build/mars_orders/build install --record /home/harsh/ros2_ws/build/mars_orders/install.log --install-scripts $base/lib/mars_orders --single-version-externally-managed install_data
+[0.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/harsh/ros2_ws/src/mars -DCMAKE_INSTALL_PREFIX=/home/harsh/ros2_ws/install/mars
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[0.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+[0.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mars)
+[0.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake module files
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake config files
+[0.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('mars', 'cmake_prefix_path')
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.ps1'
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.dsv'
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.sh'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/pkgconfig/mars.pc'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/python3.12/site-packages'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.ps1'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/harsh/ros2_ws/install/mars/share/mars/package.dsv'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.sh'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.bash'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.zsh'
+[0.713s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/harsh/ros2_ws/install/mars/share/colcon-core/packages/mars)
+[0.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mars)
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake module files
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars' for CMake config files
+[0.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('mars', 'cmake_prefix_path')
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars/share/mars/hook/cmake_prefix_path.sh'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/pkgconfig/mars.pc'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/lib/python3.12/site-packages'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars/bin'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.ps1'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/harsh/ros2_ws/install/mars/share/mars/package.dsv'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.sh'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars/share/mars/package.zsh'
+[0.716s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/harsh/ros2_ws/install/mars/share/colcon-core/packages/mars)
+[0.932s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders' for CMake module files
+[0.933s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/harsh/ros2_ws/src/mars_orders' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/harsh/ros2_ws/build/mars_orders/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mars_orders build --build-base /home/harsh/ros2_ws/build/mars_orders/build install --record /home/harsh/ros2_ws/build/mars_orders/install.log --install-scripts $base/lib/mars_orders --single-version-externally-managed install_data
+[0.933s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders' for CMake config files
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders/lib'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders/bin'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders/lib/pkgconfig/mars_orders.pc'
+[0.934s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages'
+[0.934s] Level 1:colcon.colcon_core.shell:create_environment_hook('mars_orders', 'pythonpath')
+[0.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/hook/pythonpath.ps1'
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/hook/pythonpath.dsv'
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/hook/pythonpath.sh'
+[0.935s] Level 1:colcon.colcon_core.environment:checking '/home/harsh/ros2_ws/install/mars_orders/bin'
+[0.935s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mars_orders)
+[0.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/package.ps1'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/package.dsv'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/package.sh'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/package.bash'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/harsh/ros2_ws/install/mars_orders/share/mars_orders/package.zsh'
+[0.937s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/harsh/ros2_ws/install/mars_orders/share/colcon-core/packages/mars_orders)
+[0.937s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.937s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.937s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.937s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.945s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.945s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.945s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.956s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.ps1'
+[0.957s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/harsh/ros2_ws/install/_local_setup_util_ps1.py'
+[0.958s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.ps1'
+[0.959s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.sh'
+[0.959s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/harsh/ros2_ws/install/_local_setup_util_sh.py'
+[0.959s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.sh'
+[0.960s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.bash'
+[0.960s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.bash'
+[0.961s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/harsh/ros2_ws/install/local_setup.zsh'
+[0.961s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/harsh/ros2_ws/install/setup.zsh'

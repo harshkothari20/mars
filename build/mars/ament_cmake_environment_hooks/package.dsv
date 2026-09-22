@@ -1,0 +1,4 @@
+source;share/mars/local_setup.bash
+source;share/mars/local_setup.dsv
+source;share/mars/local_setup.sh
+source;share/mars/local_setup.zsh

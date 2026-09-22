@@ -1,0 +1,55 @@
+[0.010s] Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[0.059s] Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[0.068s] Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+[0.077s] -- Install configuration: ""
+[0.077s] -- Execute custom install script
+[0.077s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/launch/gazebo_model.launch.py
+[0.077s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/launch/slam_mapping.launch.py
+[0.077s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/macros.xacro
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/base_motor_holder_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/base_so101_v2.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/handle_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/motor_holder_so101_base_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/motor_holder_so101_wrist_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/moving_jaw_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/rotation_pitch_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/sts3215_03a_no_horn_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/sts3215_03a_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/trigger_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/under_arm_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/upper_arm_so101_v1.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/waveshare_mounting_plate_so101_v2.stl
+[0.078s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_follower_so101_v1.stl
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_pitch_so101_v2.stl
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_so101_v1.stl
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101.xacro
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101_arm.xacro
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101_end_effector.xacro
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/robot.gazebo
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/description/robot.xacro
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/config/bridge_parameters.yaml
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/config/mapper_params_online_async.yaml
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/config/nav2_params.yaml
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/config/warehouse_locations.yaml
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/maps/my_clean_room.pgm
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/maps/my_clean_room.yaml
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/worlds/obstacles.world
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_APPLE001.png
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_BANANA001.png
+[0.079s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_GRAPES001.png
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/package_run_dependencies/mars
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/parent_prefix_path/mars
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/environment/ament_prefix_path.sh
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/environment/ament_prefix_path.dsv
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/environment/path.sh
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/environment/path.dsv
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.bash
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.sh
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.zsh
+[0.080s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.dsv
+[0.080s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/package.dsv
+[0.089s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/packages/mars
+[0.090s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/cmake/marsConfig.cmake
+[0.090s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/cmake/marsConfig-version.cmake
+[0.090s] -- Up-to-date symlink: /home/harsh/ros2_ws/install/mars/share/mars/package.xml
+[0.091s] Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars

@@ -1,0 +1,12 @@
+warehouse_locations:
+  shelves:
+    APPLE001: {x: 2.5, y: 1.2, yaw: 0.0}
+    BANANA001: {x: 2.5, y: 3.5, yaw: 0.0}
+    ORANGE001: {x: -1.8, y: 1.2, yaw: 3.14}
+    GRAPES001: {x: -1.8, y: 3.5, yaw: 3.14}
+    WATERMELON001: {x: 0.5, y: 4.8, yaw: 1.57}
+    MANGO001: {x: 0.5, y: -2.0, yaw: -1.57}
+  drop_location:
+    x: 0.0
+    y: 0.0
+    yaw: 0.0

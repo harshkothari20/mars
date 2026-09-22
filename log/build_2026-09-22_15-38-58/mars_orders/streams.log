@@ -1,0 +1,55 @@
+[0.476s] Invoking command in '/home/harsh/ros2_ws/src/mars_orders': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/harsh/ros2_ws/build/mars_orders/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mars_orders build --build-base /home/harsh/ros2_ws/build/mars_orders/build install --record /home/harsh/ros2_ws/build/mars_orders/install.log --install-scripts $base/lib/mars_orders --single-version-externally-managed install_data
+[0.637s] running egg_info
+[0.637s] creating ../../build/mars_orders/mars_orders.egg-info
+[0.646s] writing ../../build/mars_orders/mars_orders.egg-info/PKG-INFO
+[0.647s] writing dependency_links to ../../build/mars_orders/mars_orders.egg-info/dependency_links.txt
+[0.647s] writing entry points to ../../build/mars_orders/mars_orders.egg-info/entry_points.txt
+[0.647s] writing requirements to ../../build/mars_orders/mars_orders.egg-info/requires.txt
+[0.647s] writing top-level names to ../../build/mars_orders/mars_orders.egg-info/top_level.txt
+[0.647s] writing manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+[0.666s] reading manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+[0.666s] writing manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+[0.666s] running build
+[0.667s] running build_py
+[0.667s] creating /home/harsh/ros2_ws/build/mars_orders/build
+[0.667s] creating /home/harsh/ros2_ws/build/mars_orders/build/lib
+[0.667s] creating /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.667s] copying mars_orders/qr_utils.py -> /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.667s] copying mars_orders/mock_nav.py -> /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.667s] copying mars_orders/order_manager.py -> /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.667s] copying mars_orders/__init__.py -> /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.667s] copying mars_orders/mock_arm.py -> /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.667s] copying mars_orders/order_store.py -> /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders
+[0.668s] running install
+[0.671s] running install_lib
+[0.681s] creating /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] copying /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders/qr_utils.py -> /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] copying /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders/mock_nav.py -> /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] copying /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders/order_manager.py -> /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] copying /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders/__init__.py -> /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] copying /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders/mock_arm.py -> /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] copying /home/harsh/ros2_ws/build/mars_orders/build/lib/mars_orders/order_store.py -> /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders
+[0.681s] byte-compiling /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders/qr_utils.py to qr_utils.cpython-312.pyc
+[0.682s] byte-compiling /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders/mock_nav.py to mock_nav.cpython-312.pyc
+[0.682s] byte-compiling /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders/order_manager.py to order_manager.cpython-312.pyc
+[0.684s] byte-compiling /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders/__init__.py to __init__.cpython-312.pyc
+[0.684s] byte-compiling /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders/mock_arm.py to mock_arm.cpython-312.pyc
+[0.685s] byte-compiling /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders/order_store.py to order_store.cpython-312.pyc
+[0.685s] running install_data
+[0.685s] creating /home/harsh/ros2_ws/install/mars_orders/share/ament_index
+[0.685s] creating /home/harsh/ros2_ws/install/mars_orders/share/ament_index/resource_index
+[0.686s] creating /home/harsh/ros2_ws/install/mars_orders/share/ament_index/resource_index/packages
+[0.686s] copying resource/mars_orders -> /home/harsh/ros2_ws/install/mars_orders/share/ament_index/resource_index/packages
+[0.686s] copying package.xml -> /home/harsh/ros2_ws/install/mars_orders/share/mars_orders
+[0.686s] creating /home/harsh/ros2_ws/install/mars_orders/share/mars_orders/launch
+[0.686s] copying launch/orders.launch.py -> /home/harsh/ros2_ws/install/mars_orders/share/mars_orders/launch
+[0.686s] creating /home/harsh/ros2_ws/install/mars_orders/share/mars_orders/config
+[0.686s] copying config/locations.yaml -> /home/harsh/ros2_ws/install/mars_orders/share/mars_orders/config
+[0.686s] running install_egg_info
+[0.699s] Copying ../../build/mars_orders/mars_orders.egg-info to /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders-0.1.0-py3.12.egg-info
+[0.700s] running install_scripts
+[0.777s] Installing mock_arm script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[0.777s] Installing mock_nav script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[0.777s] Installing order_manager script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[0.778s] writing list of installed files to '/home/harsh/ros2_ws/build/mars_orders/install.log'
+[0.796s] Invoked command in '/home/harsh/ros2_ws/src/mars_orders' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/harsh/ros2_ws/build/mars_orders/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mars_orders build --build-base /home/harsh/ros2_ws/build/mars_orders/build install --record /home/harsh/ros2_ws/build/mars_orders/install.log --install-scripts $base/lib/mars_orders --single-version-externally-managed install_data

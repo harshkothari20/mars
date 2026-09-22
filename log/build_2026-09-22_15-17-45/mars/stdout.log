@@ -1,0 +1,85 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/harsh/ros2_ws/build/mars
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/launch/gazebo_model.launch.py
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/launch/slam_mapping.launch.py
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/macros.xacro
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/base_motor_holder_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/base_so101_v2.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/handle_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/motor_holder_so101_base_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/motor_holder_so101_wrist_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/moving_jaw_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/rotation_pitch_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/sts3215_03a_no_horn_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/sts3215_03a_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/trigger_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/under_arm_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/upper_arm_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/waveshare_mounting_plate_so101_v2.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_follower_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_pitch_so101_v2.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_so101_v1.stl
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101.xacro
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101_arm.xacro
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101_end_effector.xacro
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/robot.gazebo
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/robot.xacro
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/bridge_parameters.yaml
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/mapper_params_online_async.yaml
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/nav2_params.yaml
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/warehouse_locations.yaml
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/maps/my_clean_room.pgm
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/maps/my_clean_room.yaml
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/obstacles.world
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_APPLE001.png
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_BANANA001.png
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_GRAPES001.png
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/package_run_dependencies/mars
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/parent_prefix_path/mars
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/ament_prefix_path.sh
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/ament_prefix_path.dsv
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/path.sh
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/path.dsv
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.bash
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.sh
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.zsh
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.dsv
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/package.dsv
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/packages/mars
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/cmake/marsConfig.cmake
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/cmake/marsConfig-version.cmake
+-- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/package.xml

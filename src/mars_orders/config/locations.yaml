@@ -1,0 +1,11 @@
+# Poses in the map frame. Must match worlds/mars_warehouse.sdf.
+# yaw = 3.14159 means the rover faces west (towards the shelves).
+frame_id: map
+
+aisles:
+  APPLE001:  {aisle: 1, x: -2.2, y:  2.5, yaw: 3.14159}
+  BANANA001: {aisle: 2, x: -2.2, y:  0.0, yaw: 3.14159}
+  GRAPES001: {aisle: 3, x: -2.2, y: -2.5, yaw: 3.14159}
+
+home: {x: 3.0, y: -3.0, yaw: 3.14159}   # rover start / stop
+drop: {x: 3.0, y: -3.0, yaw: 3.14159}   # order drop-off (same zone as home)

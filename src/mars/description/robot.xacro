@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<robot name="differential_drive_robot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <!-- pi constant -->
+    <xacro:property name="pi" value="3.14159265" />
+    <!-- body_dimension -->
+    <xacro:property name="chassis_length" value="0.5"/>   <!-- a -->
+    <xacro:property name="chassis_width" value="0.4"/>    <!-- c -->
+    <xacro:property name="chassis_height" value="0.08"/>  <!-- b -->
+
+    <!-- wheel and caster dimension -->
+    <xacro:property name="wheel_radius" value="0.076"/>    <!-- r -->
+    <xacro:property name="wheel_thickness" value="0.045"/> <!-- d -->
+
+    <xacro:property name="caster_wheel_radius" value="0.0405"/>  
+    <xacro:property name="caster_wheel_thickness" value="0.0000000000000000000000000"/>
+
+    <xacro:property name="ground_center" value="${chassis_height/2+wheel_radius}"/>         <!-- s1  -->
+    <xacro:property name="wheel_c_center_l" value="${2*wheel_radius}"/>      <!-- s2  -->
+    <xacro:property name="caster_c_center" value="${2*wheel_radius}"/>       <!-- s3  -->
+    <xacro:property name="wheel_c_center_w" value="${chassis_width/2+wheel_thickness/2}"/>      <!-- s4  -->
+
+    <!-- mass and inertia  -->
+    <xacro:property name="chassis_mass" value="6.0"/>        <!-- m1 --> 
+    <xacro:property name="wheel_mass" value="2.1"/>          <!-- m2 -->
+    <xacro:property name="caster_wheel_mass" value="2.5"/>   <!-- m3 -->
+
+    <xacro:property name="ix_body" value="${(1/12) * chassis_mass * (chassis_width*chassis_width+chassis_height*chassis_height)}" />
+    <xacro:property name="iy_body" value="${(1/12) * chassis_mass * (chassis_length*chassis_length+chassis_width*chassis_width)}" />    
+    <xacro:property name="iz_body" value="${(1/12) * chassis_mass * (chassis_length*chassis_length+chassis_height*chassis_height)}" /> 
+
+    <xacro:property name="iz_wheel" value="${0.5* wheel_mass * wheel_radius * wheel_radius}" />
+    <xacro:property name="i_wheel" value="${(1.0/12.0) * wheel_mass * (3.0*wheel_radius * wheel_radius + wheel_thickness * wheel_thickness)}" />    
+
+    <xacro:property name="i_caster" value="${(2.0/5.0) * caster_wheel_mass * caster_wheel_radius * caster_wheel_radius }" /> 
+
+    <xacro:property name="wheel_offset_z" value="0.01"/>
+    <xacro:property name="wheel_offset_y" value="0.22225"/> 
+    <xacro:property name="wheel_offset_x" value="0.4"/>
+    <xacro:property name="caster_wheel_offset_x" value="0.075"/>
+    <xacro:property name="caster_wheel_offset_z" value="${wheel_offset_z - wheel_radius + caster_wheel_radius}"/>
+
+    <material name="red">
+        <color rgba="0.8 0.0 0.0 1.0"/>
+    </material>
+    <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+    </material>
+    <material name="blue">
+        <color rgba="0.0 0.0 0.8 1.0"/>
+    </material>
+    <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <!-- Inertial macros -->
+    <xacro:macro name="inertia_body">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 ${ground_center}"/>
+            <mass value="${chassis_mass}" />
+            <inertia ixx="${ix_body}" ixy="0.0" ixz="0.0" iyy="${iy_body}" iyz="0" izz="${iz_body}" />
+        </inertial>
+    </xacro:macro>    
+
+    <xacro:macro name="inertia_wheel">
+        <inertial>
+            <origin rpy="1.57 0 0" xyz="0 0 0"/>
+            <mass value="${wheel_mass}" />
+            <inertia ixx="${i_wheel}" ixy="0.0" ixz="0.0" iyy="${i_wheel}" iyz="0" izz="${i_wheel}" />
+        </inertial>
+    </xacro:macro>   
+
+    <xacro:macro name="inertia_caster">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value="${caster_wheel_mass}" />
+            <inertia ixx="${i_caster}" ixy="0.0" ixz="0.0" iyy="${i_caster}" iyz="0" izz="${i_caster}" />
+        </inertial>
+    </xacro:macro>  
+
+    <!-- Include Gazebo plugin configuration -->
+    <xacro:include filename="$(find mars)/description/robot.gazebo" />
+
+    <!-- Include SO-101 arm description -->
+    <xacro:include filename="$(find mars)/description/arm/so101.xacro" />
+
+    <!-- 2nd-story platform: supports clear the lidar, plate carries the arm -->
+    <xacro:property name="lidar_radius" value="0.1"/>
+    <xacro:property name="lidar_height" value="0.1"/>
+    <xacro:property name="support_clearance" value="0.02"/>            <!-- extra height above lidar top -->
+    <xacro:property name="support_height" value="${lidar_height + support_clearance}"/>
+    <xacro:property name="support_radius" value="0.008"/>
+    <xacro:property name="support_circle_radius" value="${lidar_radius + 0.03}"/> <!-- posts sit outside the lidar body -->
+    <xacro:property name="level2_length" value="0.32"/>
+    <xacro:property name="level2_width" value="0.32"/>
+    <xacro:property name="level2_thickness" value="0.01"/>
+    <xacro:property name="platform_z" value="${chassis_height + wheel_radius}"/> <!-- chassis top, same ref as lidar_joint -->
+
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+    </material>
+
+    <!-- Arm mount pose now lives on the 2nd-story plate (tweak these, not the arm files, to reposition) -->
+    <xacro:property name="arm_mount_x" value="0.0"/>
+    <xacro:property name="arm_mount_y" value="0.0"/>
+    <xacro:property name="arm_mount_z" value="${level2_thickness}"/>
+    <xacro:property name="arm_mount_yaw" value="0.0"/>
+
+    <!-- Links and joints -->
+    <link name="base_footprint"></link>
+    <joint name="base_link_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+    </joint>
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="${chassis_length} ${chassis_width} ${chassis_height}" />
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 ${ground_center}"/>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${chassis_length} ${chassis_width} ${chassis_height}" />
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 ${ground_center}"/>
+        </collision>
+        <xacro:inertia_body />
+    </link>    
+
+    <!-- left wheel -->
+    <joint name="wheel1_joint" type="continuous" >
+        <parent link="base_link"/>
+        <child link="wheel1_link" />
+        <origin xyz="${-wheel_c_center_l} ${wheel_c_center_w} ${wheel_radius}" rpy="0 0 0" />
+        <axis xyz="0 1 0"/>
+        <limit effort="50000" velocity="10"/>
+        <dynamics damping="1.0" friction="1.0"/>
+    </joint>
+
+    <link name="wheel1_link">
+        <visual>
+            <origin rpy="1.57 0 0" xyz="0 0 0"/>
+            <geometry>
+                <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <origin rpy="1.57 0 0" xyz="0 0 0"/>
+            <geometry>
+                <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/>
+            </geometry>
+        </collision>
+        <xacro:inertia_wheel/>
+    </link>
+
+    <!-- right wheel -->
+    <joint name="wheel2_joint" type="continuous" >
+        <parent link="base_link"/>
+        <child link="wheel2_link" />
+        <origin xyz="${-wheel_c_center_l} ${-wheel_c_center_w} ${wheel_radius}" rpy="0 0 0" />
+        <axis xyz="0 1 0"/>
+        <limit effort="50000" velocity="10"/>
+        <dynamics damping="1.0" friction="1.0"/>
+    </joint>
+
+    <link name="wheel2_link">
+        <visual>
+            <origin rpy="1.57 0 0" xyz="0 0 0"/>
+            <geometry>
+                <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <origin rpy="1.57 0 0" xyz="0 0 0"/>
+            <geometry>
+                <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/>
+            </geometry>
+        </collision>
+        <xacro:inertia_wheel/>
+    </link>
+
+    <!-- Caster wheel -->
+    <joint name="caster_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="caster_link"/>
+        <origin xyz="${caster_c_center} 0 ${wheel_radius}" rpy="0 0 0"/>
+    </joint>
+
+    <link name="caster_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <sphere radius="${wheel_radius}" />
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <sphere radius="${wheel_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertia_caster />
+    </link>
+
+    <!-- Lidar -->
+    <joint name="lidar_joint" type="fixed">
+        <origin xyz="0.0 0 ${chassis_height + wheel_radius}" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="lidar_link"/>
+        <axis xyz="0 1 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="lidar_link">
+        <visual>
+            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision name="collision">
+            <origin xyz="0 0 0.05" rpy="0 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="1e-6"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+        </inertial>
+    </link>
+
+    <!-- Support post macro: fixed cylinder from chassis top up to the 2nd-story plate -->
+    <xacro:macro name="support_leg" params="suffix x y">
+        <joint name="support_${suffix}_joint" type="fixed">
+            <origin xyz="${x} ${y} ${platform_z}" rpy="0 0 0"/>
+            <parent link="base_link"/>
+            <child link="support_${suffix}_link"/>
+        </joint>
+        <link name="support_${suffix}_link">
+            <visual>
+                <origin xyz="0 0 ${support_height/2}" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder length="${support_height}" radius="${support_radius}"/>
+                </geometry>
+                <material name="black"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 ${support_height/2}" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder length="${support_height}" radius="${support_radius}"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.05"/>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <inertia ixx="1e-5" ixy="0" ixz="0" iyy="1e-5" iyz="0" izz="1e-5"/>
+            </inertial>
+        </link>
+    </xacro:macro>
+
+    <!-- 8 posts, 45 deg apart, on a circle around the lidar -->
+    <xacro:support_leg suffix="1" x="${support_circle_radius*1.0}"        y="0.0"/>
+    <xacro:support_leg suffix="2" x="${support_circle_radius*0.70710678}" y="${support_circle_radius*0.70710678}"/>
+    <xacro:support_leg suffix="3" x="0.0"                                  y="${support_circle_radius*1.0}"/>
+    <xacro:support_leg suffix="4" x="${-support_circle_radius*0.70710678}" y="${support_circle_radius*0.70710678}"/>
+    <xacro:support_leg suffix="5" x="${-support_circle_radius*1.0}"        y="0.0"/>
+    <xacro:support_leg suffix="6" x="${-support_circle_radius*0.70710678}" y="${-support_circle_radius*0.70710678}"/>
+    <xacro:support_leg suffix="7" x="0.0"                                  y="${-support_circle_radius*1.0}"/>
+    <xacro:support_leg suffix="8" x="${support_circle_radius*0.70710678}"  y="${-support_circle_radius*0.70710678}"/>
+
+    <!-- 2nd-story plate, resting on top of the 8 posts -->
+    <joint name="level2_joint" type="fixed">
+        <origin xyz="0 0 ${platform_z + support_height}" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="level2_link"/>
+    </joint>
+
+    <link name="level2_link">
+        <visual>
+            <origin xyz="0 0 ${level2_thickness/2}" rpy="0 0 0"/>
+            <geometry>
+                <box size="${level2_length} ${level2_width} ${level2_thickness}"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 ${level2_thickness/2}" rpy="0 0 0"/>
+            <geometry>
+                <box size="${level2_length} ${level2_width} ${level2_thickness}"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.3"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/>
+        </inertial>
+    </link>
+
+    <!-- SO-101 pick arm, mounted on the 2nd-story plate -->
+    <xacro:so101_arm prefix="arm_" parent="level2_link" add_transmissions="false">
+        <origin xyz="${arm_mount_x} ${arm_mount_y} ${arm_mount_z}" rpy="0 0 ${arm_mount_yaw}"/>
+    </xacro:so101_arm>
+
+</robot>

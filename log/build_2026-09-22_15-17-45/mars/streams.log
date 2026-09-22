@@ -1,0 +1,91 @@
+[0.010s] Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/harsh/ros2_ws/src/mars -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/harsh/ros2_ws/install/mars
+[0.059s] -- The C compiler identification is GNU 13.3.0
+[0.106s] -- The CXX compiler identification is GNU 13.3.0
+[0.125s] -- Detecting C compiler ABI info
+[0.212s] -- Detecting C compiler ABI info - done
+[0.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.218s] -- Detecting C compile features
+[0.218s] -- Detecting C compile features - done
+[0.227s] -- Detecting CXX compiler ABI info
+[0.327s] -- Detecting CXX compiler ABI info - done
+[0.333s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.333s] -- Detecting CXX compile features
+[0.333s] -- Detecting CXX compile features - done
+[0.337s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.475s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.524s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.616s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.655s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.668s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.682s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.697s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.763s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.766s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.865s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.882s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.900s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.965s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.051s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.052s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.052s] -- Added test 'lint_cmake' to check CMake code style
+[1.053s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.055s] -- Added test 'xmllint' to check XML markup files
+[1.056s] -- Configuring done (1.0s)
+[1.059s] -- Generating done (0.0s)
+[1.061s] -- Build files have been written to: /home/harsh/ros2_ws/build/mars
+[1.070s] Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/harsh/ros2_ws/src/mars -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/harsh/ros2_ws/install/mars
+[1.070s] Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[1.118s] Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+[1.129s] Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+[1.136s] -- Install configuration: ""
+[1.136s] -- Execute custom install script
+[1.136s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/launch/gazebo_model.launch.py
+[1.145s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/launch/slam_mapping.launch.py
+[1.155s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/macros.xacro
+[1.164s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/base_motor_holder_so101_v1.stl
+[1.173s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/base_so101_v2.stl
+[1.182s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/handle_so101_v1.stl
+[1.192s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/motor_holder_so101_base_v1.stl
+[1.203s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/motor_holder_so101_wrist_v1.stl
+[1.214s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/moving_jaw_so101_v1.stl
+[1.223s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/rotation_pitch_so101_v1.stl
+[1.231s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/sts3215_03a_no_horn_v1.stl
+[1.241s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/sts3215_03a_v1.stl
+[1.251s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/trigger_so101_v1.stl
+[1.260s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/under_arm_so101_v1.stl
+[1.268s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/upper_arm_so101_v1.stl
+[1.277s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/waveshare_mounting_plate_so101_v2.stl
+[1.287s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_follower_so101_v1.stl
+[1.297s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_pitch_so101_v2.stl
+[1.308s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/meshes/wrist_roll_so101_v1.stl
+[1.317s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101.xacro
+[1.327s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101_arm.xacro
+[1.336s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/arm/so101_end_effector.xacro
+[1.346s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/robot.gazebo
+[1.355s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/description/robot.xacro
+[1.364s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/bridge_parameters.yaml
+[1.374s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/mapper_params_online_async.yaml
+[1.384s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/nav2_params.yaml
+[1.393s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/config/warehouse_locations.yaml
+[1.401s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/maps/my_clean_room.pgm
+[1.413s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/maps/my_clean_room.yaml
+[1.424s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/obstacles.world
+[1.434s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_APPLE001.png
+[1.443s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_BANANA001.png
+[1.450s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/worlds/textures/qr_GRAPES001.png
+[1.459s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/package_run_dependencies/mars
+[1.469s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/parent_prefix_path/mars
+[1.479s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/ament_prefix_path.sh
+[1.487s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/ament_prefix_path.dsv
+[1.497s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/path.sh
+[1.508s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/environment/path.dsv
+[1.519s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.bash
+[1.528s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.sh
+[1.538s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.zsh
+[1.547s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/local_setup.dsv
+[1.556s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/package.dsv
+[1.566s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/ament_index/resource_index/packages/mars
+[1.576s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/cmake/marsConfig.cmake
+[1.583s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/cmake/marsConfig-version.cmake
+[1.593s] -- Symlinking: /home/harsh/ros2_ws/install/mars/share/mars/package.xml
+[1.606s] Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
