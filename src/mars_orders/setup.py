@@ -25,6 +25,7 @@ setup(
             "order_manager = mars_orders.order_manager:main",
             "mock_arm = mars_orders.mock_arm:main",
             "mock_nav = mars_orders.mock_nav:main",
+            "arm_controller = mars_orders.arm_controller:main",
         ],
     },
 )

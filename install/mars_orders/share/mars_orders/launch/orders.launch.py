@@ -20,6 +20,13 @@ def generate_launch_description():
                               description="Start a fake navigate_to_pose server (no Nav2 needed)"),
         DeclareLaunchArgument("mock_arm", default_value="false",
                               description="Start a fake arm that answers DONE after a few seconds"),
+        DeclareLaunchArgument("sim_arm", default_value="false",
+                              description="Run the hardcoded pick-sequence arm controller (sim testing only)"),
+                         
+        Node(package="mars_orders", executable="arm_controller", output="screen",
+             condition=IfCondition(LaunchConfiguration("sim_arm")),
+             parameters=[{"use_sim_time": use_sim_time}]),
+
 
         Node(package="mars_orders", executable="order_manager", output="screen",
              parameters=[{"use_sim_time": use_sim_time,

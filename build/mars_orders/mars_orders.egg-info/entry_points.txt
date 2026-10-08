@@ -1,4 +1,5 @@
 [console_scripts]
+arm_controller = mars_orders.arm_controller:main
 mock_arm = mars_orders.mock_arm:main
 mock_nav = mars_orders.mock_nav:main
 order_manager = mars_orders.order_manager:main

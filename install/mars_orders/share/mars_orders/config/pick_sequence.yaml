@@ -1,0 +1,39 @@
+# Hardcoded joint-angle pick sequence (full IK is explicitly out of scope -
+# see decisions-and-approach). Shared across all aisles: every item sits at
+# the same offset from the robot's stop pose, so only the world coordinates
+# differ per aisle (config/locations.yaml -> items).
+#
+# TODO: every angle below is a PLACEHOLDER, chosen only to stay within each
+# joint's URDF limits. To get real numbers:
+#   1. ros2 launch mars_orders orders.launch.py mock_nav:=true sim_arm:=true
+#   2. Park at any aisle stop, then jog each joint, e.g.:
+#      ros2 topic pub /arm/joint/arm_shoulder_pan/cmd_pos std_msgs/msg/Float64 "{data: 0.3}"
+#   3. Once the gripper is at the item box, ros2 topic echo /joint_states --once
+#      and copy those values into the matching step below. Repeat per step.
+
+gripper_open: 1.2
+gripper_closed: 0.1
+
+steps:
+  - name: approach
+    dwell_s: 2.0
+    joints: {arm_shoulder_pan: 0.0, arm_shoulder_lift: -0.60, arm_elbow_flex: 0.90, arm_wrist_flex: -0.30, arm_wrist_roll: 0.0, arm_gripper: 1.2}
+  - name: grasp
+    dwell_s: 1.5
+    joints: {arm_shoulder_pan: 0.0, arm_shoulder_lift: -0.75, arm_elbow_flex: 1.05, arm_wrist_flex: -0.30, arm_wrist_roll: 0.0, arm_gripper: 1.2}
+  - name: close_gripper
+    dwell_s: 1.0
+    joints: {arm_shoulder_pan: 0.0, arm_shoulder_lift: -0.75, arm_elbow_flex: 1.05, arm_wrist_flex: -0.30, arm_wrist_roll: 0.0, arm_gripper: 0.1}
+  - name: lift
+    dwell_s: 1.5
+    joints: {arm_shoulder_pan: 0.0, arm_shoulder_lift: -0.30, arm_elbow_flex: 0.60, arm_wrist_flex: -0.30, arm_wrist_roll: 0.0, arm_gripper: 0.1}
+  - name: swing_to_basket
+    dwell_s: 2.0
+    box_pose: basket
+    joints: {arm_shoulder_pan: 1.4, arm_shoulder_lift: -0.30, arm_elbow_flex: 0.60, arm_wrist_flex: -0.30, arm_wrist_roll: 0.0, arm_gripper: 0.1}
+  - name: release
+    dwell_s: 1.0
+    joints: {arm_shoulder_pan: 1.4, arm_shoulder_lift: -0.30, arm_elbow_flex: 0.60, arm_wrist_flex: -0.30, arm_wrist_roll: 0.0, arm_gripper: 1.2}
+  - name: park
+    dwell_s: 1.0
+    joints: {arm_shoulder_pan: 0.0, arm_shoulder_lift: 0.0, arm_elbow_flex: 0.0, arm_wrist_flex: 0.0, arm_wrist_roll: 0.0, arm_gripper: 1.2}

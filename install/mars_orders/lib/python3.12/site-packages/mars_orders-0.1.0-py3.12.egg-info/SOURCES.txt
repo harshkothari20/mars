@@ -10,8 +10,10 @@ setup.py
 ../../build/mars_orders/mars_orders.egg-info/top_level.txt
 ../../build/mars_orders/mars_orders.egg-info/zip-safe
 config/locations.yaml
+config/pick_sequence.yaml
 launch/orders.launch.py
 mars_orders/__init__.py
+mars_orders/arm_controller.py
 mars_orders/mock_arm.py
 mars_orders/mock_nav.py
 mars_orders/order_manager.py

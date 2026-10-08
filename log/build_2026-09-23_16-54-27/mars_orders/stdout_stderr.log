@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/mars_orders/mars_orders.egg-info/PKG-INFO
+writing dependency_links to ../../build/mars_orders/mars_orders.egg-info/dependency_links.txt
+writing entry points to ../../build/mars_orders/mars_orders.egg-info/entry_points.txt
+writing requirements to ../../build/mars_orders/mars_orders.egg-info/requires.txt
+writing top-level names to ../../build/mars_orders/mars_orders.egg-info/top_level.txt
+reading manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+writing manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders-0.1.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/mars_orders/mars_orders.egg-info to /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders-0.1.0-py3.12.egg-info
+running install_scripts
+Installing mock_arm script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+Installing mock_nav script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+Installing order_manager script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+writing list of installed files to '/home/harsh/ros2_ws/build/mars_orders/install.log'

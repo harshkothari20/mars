@@ -1,0 +1,4 @@
+Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/harsh/ros2_ws/build/mars -- -j12 -l12
+Invoking command in '/home/harsh/ros2_ws/build/mars': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars
+Invoked command in '/home/harsh/ros2_ws/build/mars' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/harsh/ros2_ws/build/mars

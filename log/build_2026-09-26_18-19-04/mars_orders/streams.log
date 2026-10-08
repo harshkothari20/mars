@@ -1,0 +1,24 @@
+[0.930s] Invoking command in '/home/harsh/ros2_ws/src/mars_orders': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/harsh/ros2_ws/build/mars_orders/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mars_orders build --build-base /home/harsh/ros2_ws/build/mars_orders/build install --record /home/harsh/ros2_ws/build/mars_orders/install.log --install-scripts $base/lib/mars_orders --single-version-externally-managed install_data
+[1.203s] running egg_info
+[1.226s] writing ../../build/mars_orders/mars_orders.egg-info/PKG-INFO
+[1.227s] writing dependency_links to ../../build/mars_orders/mars_orders.egg-info/dependency_links.txt
+[1.227s] writing entry points to ../../build/mars_orders/mars_orders.egg-info/entry_points.txt
+[1.227s] writing requirements to ../../build/mars_orders/mars_orders.egg-info/requires.txt
+[1.227s] writing top-level names to ../../build/mars_orders/mars_orders.egg-info/top_level.txt
+[1.273s] reading manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+[1.274s] writing manifest file '../../build/mars_orders/mars_orders.egg-info/SOURCES.txt'
+[1.274s] running build
+[1.274s] running build_py
+[1.275s] running install
+[1.280s] running install_lib
+[1.295s] running install_data
+[1.296s] running install_egg_info
+[1.316s] removing '/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders-0.1.0-py3.12.egg-info' (and everything under it)
+[1.316s] Copying ../../build/mars_orders/mars_orders.egg-info to /home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages/mars_orders-0.1.0-py3.12.egg-info
+[1.317s] running install_scripts
+[1.451s] Installing arm_controller script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[1.451s] Installing mock_arm script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[1.451s] Installing mock_nav script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[1.451s] Installing order_manager script to /home/harsh/ros2_ws/install/mars_orders/lib/mars_orders
+[1.451s] writing list of installed files to '/home/harsh/ros2_ws/build/mars_orders/install.log'
+[1.512s] Invoked command in '/home/harsh/ros2_ws/src/mars_orders' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/harsh/ros2_ws/build/mars_orders/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/harsh/ros2_ws/install/mars_orders/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mars_orders build --build-base /home/harsh/ros2_ws/build/mars_orders/build install --record /home/harsh/ros2_ws/build/mars_orders/install.log --install-scripts $base/lib/mars_orders --single-version-externally-managed install_data
