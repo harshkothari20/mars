@@ -1,1 +1,0 @@
-/home/harsh/ros2_ws/src/mars/launch/slam_mapping.launch.py
